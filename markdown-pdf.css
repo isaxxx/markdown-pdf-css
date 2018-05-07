@@ -1,0 +1,307 @@
+/* base setting */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+html > *:first-child {
+  margin-top: 0 !important;
+}
+
+html > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+html p,
+html blockquote,
+html ul,
+html ol,
+html table,
+html pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/*
+# 見出し1（h1）
+## 見出し2（h2）
+### 見出し3（h3）
+#### 見出し4（h4）
+##### 見出し5（h5）
+###### 見出し6（h6）
+段落（p）
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.875em;
+}
+
+h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* ![代替テキスト（img）](http://~) */
+
+img {
+  background-color: transparent;
+  border: 0;
+  max-width: 100%;
+}
+
+/* [リンク（a）](https://isaxxx.com) */
+
+a {
+  background-color: transparent;
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+/* **強調（strong）** */
+
+strong {
+  font-weight: 600;
+}
+
+/* *斜体（em）* */
+
+em {
+  font-style: italic;
+}
+
+/* ~~打ち消し~~ */
+
+del {
+  text-decoration: line-through;
+}
+
+/* > 引用（blockquote） */
+
+blockquote {
+  border: 0;
+  border-left: 0.25em solid #dfe2e5;
+  color: #6a737d;
+  margin: 0;
+  padding: 0 1em;
+}
+
+blockquote > *:first-child {
+  margin-top: 0;
+}
+
+blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+/*
+|セル（thead > tr > th）|セル（thead > tr > th）|セル（thead > tr > th）|
+|:-:|:--|--:|
+|セル（tbody > tr > td）|セル（tbody > tr > td）|セル（tbody > tr > td）|
+|セル（tbody > tr > td）|セル（tbody > tr > td）|セル（tbody > tr > td）|
+|セル（tbody > tr > td）|セル（tbody > tr > td）|セル（tbody > tr > td）|
+*/
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+table th {
+  font-weight: 600;
+}
+
+table th,
+table td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/*
+* 番号なしリスト（ul > li）
+* 番号なしリスト（ul > li）
+    * 番号なしリスト（ul > li > ul > li）
+    * 番号なしリスト（ul > li > ul > li）
+        * 番号なしリスト（ul > li > ul > li > ul > li）
+        * 番号なしリスト（ul > li > ul > li > ul > li）
+        * 番号なしリスト（ul > li > ul > li > ul > li）
+* 番号なしリスト（ul > li）
+
+1. 番号付きリスト（ol > li）
+2. 番号付きリスト（ol > li）
+    1. 番号付きリスト（ol > li > ol > li）
+    2. 番号付きリスト（ol > li > ol > li）
+        1. 番号付きリスト（ol > li > ol > li > ol > li）
+        2. 番号付きリスト（ol > li > ol > li > ol > li）
+        3. 番号付きリスト（ol > li > ol > li > ol > li）
+3. 番号付きリスト（ol > li）
+*/
+
+ul,
+ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+li {
+  word-wrap: break-all;
+}
+
+li > p {
+  margin-top: 16px;
+}
+
+li + li {
+  margin-top: .25em;
+}
+
+/*
+```
+  // コードサンプル（pre > code）
+  let test;
+  if (test === undefined) {
+    console.log('Hello, Markdown!');
+  }
+```
+`コード（code）`
+*/
+
+code,
+pre {
+  border: 0;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 1em;
+  margin: 0;
+}
+
+code {
+  background-color: rgba(27,31,35,0.05);
+  font-size: .85em;
+  padding: 0.2em 0.4em;
+}
+
+pre code {
+  background-color: transparent;
+  display: inline;
+  font-size: 1em;
+  line-height: inherit;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre {
+  background-color: #f6f8fa;
+  font-size: .85em;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 1.33333333em;
+  word-wrap: normal;
+}
+
+/* ----- */
+
+hr {
+  background: transparent;
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  page-break-before: always;
+}
+
+hr:after {
+  display: block;
+  clear: both;
+  content: '';
+}

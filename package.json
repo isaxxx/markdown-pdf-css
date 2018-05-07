@@ -1,0 +1,18 @@
+{
+  "name": "markdown-pdf-css",
+  "version": "1.0.0",
+  "description": "個人的に利用しているMarkdownをPDFに変換するときのCSS。",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "isaxxx",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "ejs": "^2.5.9",
+    "fs-extra": "^6.0.0",
+    "markdown-pdf": "^8.1.1",
+    "rimraf": "^2.6.2"
+  }
+}

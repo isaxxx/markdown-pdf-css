@@ -1,0 +1,7 @@
+exports.header = null;
+exports.footer = {
+  height   : '2cm',
+  contents : function(pageNum, numPages) {
+    return '<p style="font-family: serif; font-size: 10px; color: #ccc; border-top: 1px solid #eaecef; padding-top: 1em;"><%= title %> v.<%= version %> ©︎ <%= author %> <span style="float:right">' + pageNum + ' / ' + numPages + '</span><div style="clear: both;"></div></p>'
+  }
+}
