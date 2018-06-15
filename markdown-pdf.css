@@ -184,20 +184,20 @@ table tr:nth-child(2n) {
 /*
 * 番号なしリスト（ul > li）
 * 番号なしリスト（ul > li）
-    * 番号なしリスト（ul > li > ul > li）
-    * 番号なしリスト（ul > li > ul > li）
-        * 番号なしリスト（ul > li > ul > li > ul > li）
-        * 番号なしリスト（ul > li > ul > li > ul > li）
-        * 番号なしリスト（ul > li > ul > li > ul > li）
+  * 番号なしリスト（ul > li > ul > li）
+  * 番号なしリスト（ul > li > ul > li）
+    * 番号なしリスト（ul > li > ul > li > ul > li）
+    * 番号なしリスト（ul > li > ul > li > ul > li）
+    * 番号なしリスト（ul > li > ul > li > ul > li）
 * 番号なしリスト（ul > li）
 
 1. 番号付きリスト（ol > li）
 2. 番号付きリスト（ol > li）
-    1. 番号付きリスト（ol > li > ol > li）
-    2. 番号付きリスト（ol > li > ol > li）
-        1. 番号付きリスト（ol > li > ol > li > ol > li）
-        2. 番号付きリスト（ol > li > ol > li > ol > li）
-        3. 番号付きリスト（ol > li > ol > li > ol > li）
+  1. 番号付きリスト（ol > li > ol > li）
+  2. 番号付きリスト（ol > li > ol > li）
+    1. 番号付きリスト（ol > li > ol > li > ol > li）
+    2. 番号付きリスト（ol > li > ol > li > ol > li）
+    3. 番号付きリスト（ol > li > ol > li > ol > li）
 3. 番号付きリスト（ol > li）
 */
 
@@ -242,11 +242,11 @@ li + li {
 
 /*
 ```
-  // コードサンプル（pre > code）
-  let test;
-  if (test === undefined) {
-    console.log('Hello, Markdown!');
-  }
+// コードサンプル（pre > code）
+let test;
+if (test === undefined) {
+console.log('Hello, Markdown!');
+}
 ```
 `コード（code）`
 */
