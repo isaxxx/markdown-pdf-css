@@ -1,19 +1,29 @@
 # markdown-pdf-css
 
-個人的に利用しているMarkdownをPDFに変換するときのCSS。
+Convert Markdown to PDF.
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Usage
 
 ```bash
-$ npm run start -- ディレクトリ名
+$ npm run start -- (directory name in src)
 ```
 
-もしくは
+or
 
 ```bash
-$ node index.js ディレクトリ名
+$ node index.js (directory name in src)
 ```
 
-※ディレクトリ名はsrc配下
+### Example
+
+```bash
+$ npm run start -- sample
+```
+
+or
+
+```bash
+$ node index.js -- sample
+```

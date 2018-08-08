@@ -1,10 +1,11 @@
 {
   "name": "markdown-pdf-css",
-  "version": "1.0.0",
-  "description": "個人的に利用しているMarkdownをPDFに変換するときのCSS。",
+  "version": "1.0.1",
+  "description": "Convert Markdown to PDF.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "check": "eslint .",
     "git-ignore": "git rm -r --cached . && git add -A && git commit --allow-empty -m 'gitignore-refresh' && git reset --soft HEAD^",
     "git-commit": "git add -A && git commit",
     "git-push": "git push origin master"
@@ -17,5 +18,8 @@
     "fs-extra": "^6.0.1",
     "markdown-pdf": "^9.0.0",
     "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0"
   }
 }
